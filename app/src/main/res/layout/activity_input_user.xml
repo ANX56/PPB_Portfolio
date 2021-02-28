@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_InputUser"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/write"
+        android:textColor="@color/tone2"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/project31"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="@string/project32"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="@string/project33"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectImage"
+                android:text="@string/change"
+                app:layout_constraintEnd_toEndOf="@+id/imgPP"
+                app:layout_constraintStart_toStartOf="@+id/imgPP"
+                app:layout_constraintTop_toBottomOf="@+id/imgPP" />
+
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:onClick="showDateDialog"
+                android:text="@string/pick"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTglLahir"
+                app:layout_constraintEnd_toEndOf="@+id/txtWrite"
+                app:layout_constraintStart_toEndOf="@+id/txtTglLahir"
+                app:layout_constraintTop_toTopOf="@+id/txtTglLahir" />
+
+            <CheckBox
+                android:id="@+id/chkTmnSekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/tmnSklh"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <CheckBox
+                android:id="@+id/chkTmnRumah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tmnRmh"
+                app:layout_constraintStart_toStartOf="@+id/chkTmnSekolah"
+                app:layout_constraintTop_toBottomOf="@+id/chkTmnSekolah" />
+
+            <EditText
+                android:id="@+id/txtNama"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autofillHints="@string/nama"
+                android:ems="10"
+                android:hint="@string/nama"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+            <EditText
+                android:id="@+id/txtTglLahir"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autofillHints="@string/tgl"
+                android:ems="10"
+                android:hint="@string/tgl"
+                android:inputType="date"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+            <EditText
+                android:id="@+id/txtWrite"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autofillHints="@string/something"
+                android:ems="10"
+                android:hint="@string/something"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView21"
+                app:layout_constraintVertical_bias="0.538" />
+
+            <ImageView
+                android:id="@+id/imgPP"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/nama"
+                android:src="@drawable/pp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtNama"
+                app:layout_constraintTop_toTopOf="@+id/txtNama" />
+
+            <RadioGroup
+                android:id="@+id/rdbKelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView6">
+
+                <RadioButton
+                    android:id="@+id/rdbLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laki"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <RadioButton
+                    android:id="@+id/rdbPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/perempuan"
+                    app:layout_constraintEnd_toEndOf="@+id/rdbLaki"
+                    app:layout_constraintStart_toStartOf="@+id/rdbLaki"
+                    app:layout_constraintTop_toBottomOf="@+id/rdbLaki" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swcEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/ada"
+                app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/nama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/jenis"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="59dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/prompt_email"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/rdbKelamin" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="59dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="59dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tgl"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/chkTmnRumah" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="109dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/something"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/txtTglLahir" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:onClick="save"
+        android:text="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/btnLoad"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/tone1"
+        android:onClick="load"
+        android:text="@string/load"
+        app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintTop_toTopOf="@+id/btnClear" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/grey"
+        android:onClick="clears"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        android:onClick="kembali"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

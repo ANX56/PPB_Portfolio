@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_calculator">
+
+    <Button
+        android:id="@+id/btnTujuh"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tujuh"
+        android:textSize="24sp"
+        android:onClick="tujuh"
+        app:layout_constraintStart_toStartOf="@+id/btnEmpat"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpat"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnSamaDengan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/samadengan"
+        android:textSize="28sp"
+        android:background="@color/tone3"
+        android:onClick="hasil"
+        app:layout_constraintEnd_toEndOf="@+id/txtAngka"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
+        app:layout_constraintTop_toTopOf="@+id/btnClear"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnNol"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/nol"
+        android:textSize="24sp"
+        android:onClick="nol"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
+        app:layout_constraintTop_toTopOf="@+id/btnClear"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/bagi"
+        android:textSize="28sp"
+        android:onClick="bagi"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSamaDengan"
+        app:layout_constraintEnd_toEndOf="@+id/txtAngka"
+        app:layout_constraintStart_toEndOf="@+id/btnSamaDengan"
+        app:layout_constraintTop_toTopOf="@+id/btnSamaDengan"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/c"
+        android:textSize="24sp"
+        android:background="@color/tone1"
+        android:onClick="clear"
+        app:layout_constraintStart_toStartOf="@+id/btnTujuh"
+        app:layout_constraintTop_toBottomOf="@+id/btnTujuh"
+        
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/kali"
+        android:textSize="28sp"
+        android:onClick="kali"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSembilan"
+        app:layout_constraintEnd_toEndOf="@+id/txtAngka"
+        app:layout_constraintStart_toEndOf="@+id/btnSembilan"
+        app:layout_constraintTop_toTopOf="@+id/btnSembilan"
+        
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnLima"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/lima"
+        android:textSize="24sp"
+        android:onClick="lima"
+        app:layout_constraintStart_toEndOf="@+id/btnEmpat"
+        app:layout_constraintTop_toTopOf="@+id/btnEmpat"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnEnam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/enam"
+        android:textSize="24sp"
+        android:onClick="enam"
+        app:layout_constraintStart_toEndOf="@+id/btnLima"
+        app:layout_constraintTop_toTopOf="@+id/btnLima"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnEmpat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/empat"
+        android:textSize="24sp"
+        android:onClick="empat"
+        app:layout_constraintStart_toStartOf="@+id/btnSatu"
+        app:layout_constraintTop_toBottomOf="@+id/btnSatu"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/kurang"
+        android:textSize="28sp"
+        android:onClick="kurang"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEnam"
+        app:layout_constraintEnd_toEndOf="@+id/txtAngka"
+        app:layout_constraintStart_toEndOf="@+id/btnEnam"
+        app:layout_constraintTop_toTopOf="@+id/btnEnam"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnDelapan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/delapan"
+        android:textSize="24sp"
+        android:onClick="delapan"
+        app:layout_constraintStart_toEndOf="@+id/btnTujuh"
+        app:layout_constraintTop_toTopOf="@+id/btnTujuh"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnSembilan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/sembilan"
+        android:textSize="24sp"
+        android:onClick="sembilan"
+        app:layout_constraintStart_toEndOf="@+id/btnDelapan"
+        app:layout_constraintTop_toTopOf="@+id/btnDelapan"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnTiga"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/tiga"
+        android:textSize="24sp"
+        android:onClick="tiga"
+        app:layout_constraintStart_toEndOf="@+id/btnDua"
+        app:layout_constraintTop_toTopOf="@+id/btnDua"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/tambah"
+        android:textSize="28sp"
+        android:onClick="tambah"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/txtAngka"
+        app:layout_constraintStart_toEndOf="@+id/btnTiga"
+        app:layout_constraintTop_toTopOf="@+id/btnTiga"
+        app:srcCompat="@drawable/about2" />
+
+    <EditText
+        android:id="@+id/txtAngka"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints="@string/keterangan6"
+        android:ems="10"
+        android:hint="@string/nol"
+        android:inputType="none"
+        android:editable="false"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSatu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/satu"
+        android:textSize="24sp"
+        android:onClick="satu"
+        app:layout_constraintStart_toStartOf="@+id/txtAngka"
+        app:layout_constraintTop_toBottomOf="@+id/txtAngka"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnDua"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/dua"
+        android:textSize="24sp"
+        android:onClick="dua"
+        app:layout_constraintStart_toEndOf="@+id/btnSatu"
+        app:layout_constraintTop_toTopOf="@+id/btnSatu"
+        android:background="@color/grey"
+        app:srcCompat="@drawable/about2" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="@string/back"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:onClick="kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnBagi"
+        app:layout_constraintStart_toStartOf="@+id/btnSamaDengan"
+        app:layout_constraintTop_toBottomOf="@+id/btnBagi" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/exit"
+        android:contentDescription="@string/pro6"
+        android:onClick="exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnClear"
+        app:layout_constraintStart_toStartOf="@+id/btnClear"
+        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+
+    <TextView
+        android:id="@+id/txtOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text=""
+        android:textColor="@color/grey"
+        android:autofillHints="@string/pro6"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtAngka"
+        app:layout_constraintTop_toTopOf="@+id/txtAngka" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

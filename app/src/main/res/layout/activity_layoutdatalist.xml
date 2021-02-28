@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/imgKeterangan"
+        android:text="@string/friends_list"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textViewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewDelete"
+        android:layout_toStartOf="@+id/textViewDelete"
+        android:padding="5dp"
+        android:text="@string/update"
+        android:textColor="#498C1A" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:text="@string/delete"
+        android:textColor="#C20A10" />
+
+    <ImageView
+        android:id="@+id/imgKeterangan"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/friends"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/Pictures" />
+
+</RelativeLayout>
